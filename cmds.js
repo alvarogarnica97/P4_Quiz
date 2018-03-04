@@ -61,9 +61,11 @@ exports.testCmd = (rl,id) =>{
             const quiz = model.getByIndex(id);
             rl.question(colorize(`${quiz.question}?`, 'red'), answer =>{
                 if (answer.toUpperCase().trim()===quiz.answer.toUpperCase()){
+                    log('Su respuesta es correcta.\n');
                     bigLog('CORRECTO','green');
                     rl.prompt();
                 } else{
+                    log('Su respuesta es incorrecta.\n');
                     bigLog('INCORRECTO','red');
                     rl.prompt();
                 }
