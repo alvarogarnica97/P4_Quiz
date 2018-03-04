@@ -62,11 +62,11 @@ exports.testCmd = (rl,id) =>{
             rl.question(colorize(`${quiz.question}?`, 'red'), answer =>{
                 if (answer.toUpperCase().trim()===quiz.answer.toUpperCase()){
                     log('Su respuesta es correcta.\n');
-                    bigLog('CORRECTO','green');
+                    bigLog('CORRECTA','green');
                     rl.prompt();
                 } else{
                     log('Su respuesta es incorrecta.\n');
-                    bigLog('INCORRECTO','red');
+                    bigLog('INCORRECTA','red');
                     rl.prompt();
                 }
                 });         
