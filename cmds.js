@@ -155,7 +155,7 @@ exports.editCmd = (rl,id) =>{
 };
 exports.creditCmd = rl =>{
     log('Autor de la práctica.');
-    log('Álvaro Garnica Navarro');
+    log('Alvaro Garnica Navarro');
     rl.prompt();
 
 };
